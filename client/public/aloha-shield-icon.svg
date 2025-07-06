@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="shieldGradientIcon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E40AF;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0891B2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="waveGradientIcon" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#06B6D4;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#0891B2;stop-opacity:0.6" />
+    </linearGradient>
+    <filter id="glowIcon">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Main Shield -->
+  <path d="M60 10 L90 25 L90 70 C90 90 75 105 60 110 C45 105 30 90 30 70 L30 25 Z" 
+        fill="url(#shieldGradientIcon)" 
+        filter="url(#glowIcon)"
+        stroke="#1E293B" 
+        stroke-width="2"/>
+  
+  <!-- Three Red Triangles -->
+  <g fill="#DC2626">
+    <!-- Top triangle -->
+    <path d="M60 35 L52 50 L68 50 Z"/>
+    <!-- Left triangle -->
+    <path d="M45 58 L37 73 L53 73 Z"/>
+    <!-- Right triangle -->
+    <path d="M75 58 L67 73 L83 73 Z"/>
+  </g>
+  
+  <!-- Text inside shield -->
+  <text x="60" y="88" 
+        font-family="Arial, sans-serif" 
+        font-size="6" 
+        font-weight="bold" 
+        text-anchor="middle" 
+        fill="#FFFFFF">
+    ALOHA
+  </text>
+  
+  <text x="60" y="98" 
+        font-family="Arial, sans-serif" 
+        font-size="6" 
+        font-weight="bold" 
+        text-anchor="middle" 
+        fill="#FFFFFF">
+    SHIELD AI
+  </text>
+</svg>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E40AF;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0891B2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="200" cy="200" r="190" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="2"/>
+  
+  <!-- Main Shield -->
+  <path d="M200 60 L280 100 L280 200 C280 260 240 300 200 320 C160 300 120 260 120 200 L120 100 Z" 
+        fill="url(#shieldGradient)" 
+        filter="url(#glow)"
+        stroke="#1E293B" 
+        stroke-width="2"/>
+  
+  <!-- Three Red Triangles -->
+  <g fill="#DC2626">
+    <!-- Top triangle -->
+    <path d="M200 130 L185 155 L215 155 Z"/>
+    <!-- Left triangle -->
+    <path d="M165 170 L150 195 L180 195 Z"/>
+    <!-- Right triangle -->
+    <path d="M235 170 L220 195 L250 195 Z"/>
+  </g>
+  
+  <!-- Company name inside shield -->
+  <text x="200" y="250" 
+        font-family="Arial, sans-serif" 
+        font-size="14" 
+        font-weight="bold" 
+        text-anchor="middle" 
+        fill="#FFFFFF">
+    ALOHA
+  </text>
+  
+  <text x="200" y="270" 
+        font-family="Arial, sans-serif" 
+        font-size="14" 
+        font-weight="bold" 
+        text-anchor="middle" 
+        fill="#FFFFFF">
+    SHIELD AI
+  </text>
+  
+  <!-- Tagline -->
+  <text x="200" y="360" 
+        font-family="Arial, sans-serif" 
+        font-size="14" 
+        text-anchor="middle" 
+        fill="#64748B">
+    ETHquake Blockchain Insurance Hawaii
+  </text>
+</svg>
